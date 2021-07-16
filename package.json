@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@emotion/core": "^11.0.0",
+    "@emotion/react": "^11.4.0",
+    "@material-ui/core": "^4.11.4",
+    "@material-ui/icons": "^4.11.2",
+    "axios": "^0.21.1",
     "cra-template": "1.0.3",
     "gsap": "^3.6.0",
     "react": "^16.13.1",
@@ -10,7 +15,8 @@
     "react-icons": "^3.10.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
-    "react-use": "^17.2.1"
+    "react-use": "^17.2.1",
+    "react-whirligig": "^6.6.15"
   },
   "scripts": {
     "watch:sass": "node-sass sass/main.scss src/App.css -w",

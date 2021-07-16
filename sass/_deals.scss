@@ -1,0 +1,10 @@
+.deals {
+    position: relative;
+    height: 80vh;
+    background-image:
+          linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+          url(../src/utils/img/tile_background.png);
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}

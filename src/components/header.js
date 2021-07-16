@@ -1,30 +1,32 @@
-import React, { Component } from 'react';
-import {
-    FaAcquisitionsIncorporated, FaUserCircle, 
-     FaBell, FaRecordVinyl
-} from 'react-icons/fa';
+import React, {Component} from 'react';
+
+// import Slider from "./HeaderComponents/Slider";
+import ImageSlider from "./HeaderComponents/ImageSlider";
+
+//photos
+import photo1 from "../utils/img/tour-1-1.jpg";
+import photo2 from "../utils/img/tour-1-2.jpg";
+import photo3 from "../utils/img/tour-1-3.jpg";
+import photo4 from "../utils/img/tour-1-cover.jpg";
+
+import HeaderTop from './HeaderComponents/HeaderTop';
 
 class Header extends Component {
+    constructor() {
+        super();
+        this.state= {
+            images: [
+                photo1, photo2, photo3, photo4
+            ]
+        }
+    }
     render() {
+        const {images} = this.state;
         return (
-            <header>
-                    <div className="header-div">
-                        <div className="header-ribbon">
-                            <FaRecordVinyl className="header-record"/>
-                            <span>
-                                ribbon
-                            </span>
-                        </div>
-                        <div className="header-logos">
-                            <div className="header-logo">
-                                <FaUserCircle className="header-user"/>
-                            </div>
-                            <div className="header-logo-1">
-                                <FaBell className="header-bell"/>
-                            </div>
-                        </div>
-                    </div>
-                </header>
+            <header className={"header"}>
+                <HeaderTop />
+                <ImageSlider images={images}/>
+            </header>
         );
     }
 }
