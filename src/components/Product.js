@@ -3,8 +3,8 @@ import axios from "axios";
 import Whirligig from 'react-whirligig';
 import {ArrowLeft, ArrowRight} from "@material-ui/icons";
 
-import ProductCard from "../components/productCard"; 
-import FeaturedProducts from "../components/featuresProduct";
+import ProductCard from "./productsComponents/productCard"; 
+import FeaturedProducts from "./productsComponents/featuresProduct";
 
 class Product extends Component {
     constructor(props) {

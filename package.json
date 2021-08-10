@@ -13,10 +13,13 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-icons": "^3.10.0",
+    "react-redux": "^7.2.4",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.1",
     "react-use": "^17.2.1",
-    "react-whirligig": "^6.6.15"
+    "react-whirligig": "^6.6.15",
+    "redux": "^4.1.1",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "watch:sass": "node-sass sass/main.scss src/App.css -w",

@@ -4,14 +4,16 @@ import React, { Component } from 'react';
 import Header from "../components/Header";
 import Product from "../components/Product";
 import Deals from "../components/Deals";
+import Footer from '../components/Footer';
 
 class home extends Component {
     render() {
         return (
             <div className={"container"}>
-                <Header/>
+                <Header />
                 <Product />
                 <Deals />
+                <Footer />
             </div>
         );
     }

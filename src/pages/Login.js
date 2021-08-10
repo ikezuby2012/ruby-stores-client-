@@ -21,11 +21,11 @@ class Login extends Component {
                             <input type="text"
                                 // onChange={}
                                 className="login-form_input"
-                                placeholder="User name" id="name"
+                                placeholder="email" id="email"
                                 // value={name}
                                 // error={errors.name}
                                 required={true}/>
-                            <label htmlFor="name" className="login-form_label">User name</label>
+                            <label htmlFor="name" className="login-form_label">email address</label>
                         </div>
                         <div className="login-form_group">
                             <input type="password"
