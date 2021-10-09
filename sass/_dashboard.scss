@@ -29,8 +29,110 @@
         //background-color: #fff;
         border-bottom: 1px solid var(--grey-light-2);
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
+
+        &-hdText {
+            text-transform: capitalize;
+            color: var(--color-dark);
+        }
+        &-form {
+            flex: 0 0 40%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        &-form_button {
+            border: none;
+            //background-color: var(--grey-light-4);
+        }
+        &-form_icon {
+            position: relative;
+            height: 2rem !important;
+            width: 2rem !important;
+            fill: var(--grey-dark-3);
+            margin-right: -3.25rem;
+        }
+        &-form_input {
+            font-family: inherit;
+            font-size: inherit;
+            color: inherit;
+            background-color: var(--grey-light-2);
+            border: none;
+            padding: .7rem 3rem;
+            border: 1px solid var(--color-grey-dark-3);
+            border-radius: 100px;
+            width: 90%;
+            transition: all .2s;
+
+            &:focus {
+                outline: none;
+                width: 100%;
+                background-color: var(--grey-light-3);
+            }
+    
+            &::-webkit-input-placeholder {
+                font-weight: 400;
+                color: var(--grey-dark-3);
+                margin-bottom: .3px;
+            }
+        }
+        &-notification {
+            position: relative;
+            padding: .7rem;
+            border-radius: 15%;    
+            border: 1px solid var(--color-dark);
+            transition: all .2s;
+            &:hover {
+                background-color: var(--grey-light-4);
+            }
+
+            &_icon  {
+                height: 2.5rem !important;
+                width: 2.5rem !important;
+                fill: var(--grey-dark-3);
+            }
+
+            &-circle {
+                font-size: .8rem;
+                height: 1.2rem;
+                width: 1.2rem;
+                border-radius: 50%;
+                background-color: #eb5c62;
+                position: absolute;
+                top: .3rem;
+                left: 1.6rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        &-userBox {
+            &> * {
+                &:not(:last-child) {margin-right: .2rem;}
+            }
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            border: 1px solid var(--color-dark);
+            border-radius: 4px;
+            transition: all .2s;
+            
+            &:hover {
+                background-color: var(--grey-light-4);
+            }
+            
+            &_avaticon {
+                height: 2.95rem !important;
+                width: 2.95rem !important;
+                fill: var(--grey-dark-3);
+            }
+            &_icon {
+                height: 2.25rem !important;
+                width: 2.25rem !important;
+                fill: var(--grey-dark-3);
+            }
+        }
     }
     &-main {
         background-color: var(--grey-light-4);

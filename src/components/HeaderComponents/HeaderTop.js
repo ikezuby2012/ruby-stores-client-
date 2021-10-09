@@ -12,7 +12,7 @@ const HeaderTop = () => {
                     ruby-stores
                 </h2>
             <div className="header-behanze">&nbsp;</div>
-                    </div>
+                </div>
                     <form action="#" className={"header-form"}>
                         <input type="search" className={"header-form_input"} placeholder={"search products & brands"}/>
                         <button className={"header-form_button"}>

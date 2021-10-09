@@ -2,7 +2,7 @@
  // position: relative;
   background-image: linear-gradient(to right bottom, rgba(#07081e, .87), rgba(#050a23, .9)); 
     // url(../src/utils/img/pexels-anni-roenkae-3109807.jpg);
-  height: 99vh;
+  // height: 99vh;
   margin: 3px;
   background-size: cover;
   background-position: center;
@@ -25,6 +25,7 @@
     height: 40rem;
     background-color:rgba($color:#07081e, $alpha: .6);
     border-radius: 3px;
+    margin: 14.7rem;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;
@@ -145,13 +146,21 @@
     text-decoration-line: underline;
   }
 }
+  &-warningText {
+    font-size: 1.2rem;
+    color: red;
+    font-style: italic;
+  }
+  &-disabled {
+    background-color: grey;
+  }
 }
 
 //signup 
 .signup {
   background-image: linear-gradient(to right bottom, rgba(#07081e, .87), rgba(#050a23, .9)); 
           //url(../src/utils/img/tile_background.png);
-  height: 99vh;
+  // height: 99vh;
   margin: 3px;
   background-size: cover;
   background-position: center;
@@ -163,6 +172,7 @@
     width: 30%;
     background-color:rgba($color:#07081e, $alpha: .6);
     border-radius: 3px;
+    margin: 9rem;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
     -ms-border-radius: 3px;

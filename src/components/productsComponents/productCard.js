@@ -11,7 +11,7 @@ const handleClick = (li) => {
 }
 
 
-const productCard = ({image, name, price, rating, text, id, photo}) => {
+const productCard = ({name, price, rating, text, id, photo}) => {
     const serverBaseURI = 'http://localhost:5000';
     let star = [1,2 ,3,4,5];
     return (

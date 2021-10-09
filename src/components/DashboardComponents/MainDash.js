@@ -22,7 +22,7 @@ const MainDash = (props) => {
 
                     <ul className="dashboard-sideNav">
                         <li className="dashboard-sideNav-item dashboard-sideNav-item--active">
-                            <NavLink className="dashboard-sideNav-link" activeClassName="" to="/account">
+                            <NavLink className="dashboard-sideNav-link" activeClassName="" to="/dashboard">
                                 <span><Store className="dashboard-sideNav-logo"/></span>
                                 <span>dashboard</span>
                             </NavLink>
@@ -52,7 +52,7 @@ const MainDash = (props) => {
                 </nav>
                 <div className="dashboard-content">
                     {/* header component */}
-                    <Header />
+                    <Header username={props.username}/>
                     <>
                         {props.children}
                     </>
